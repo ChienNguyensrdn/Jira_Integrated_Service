@@ -12,7 +12,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using MicroService.Jira.Integrated.Api.Context;
+using Contracts;
+using Repository;
 
 namespace MicroService.Jira.Integrated.Api
 {
@@ -28,10 +29,10 @@ namespace MicroService.Jira.Integrated.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             services.AddControllers();
             services.AddSingleton<IConfiguration>(Configuration);
-            services.AddDbContext<JiraDbContext>(options =>
+            services.AddDbContext<Entities.RepositoryContext>(options =>
                options.UseMySQL (Configuration.GetConnectionString ("JiraDbConnect")));
             services.AddSwaggerGen(c =>
             {
@@ -39,7 +40,7 @@ namespace MicroService.Jira.Integrated.Api
             });
             
         }
-
+      
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

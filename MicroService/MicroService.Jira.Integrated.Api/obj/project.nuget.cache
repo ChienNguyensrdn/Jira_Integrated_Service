@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hdFw+KnXBhK13KOZ96KRxus1caBQ6JVo89hn2R1QMMQc7ghhygr7eKJHxVh/Xc3JYa+NfCqfZaCUOxA2U3ofFw==",
+  "dgSpecHash": "uf5oLDTxY1LMbLVV1cP47Di3gynlJOZnmHOIlfLW7JgxJejlDLOeJnrQ9PL4Bg6nwr/e/amyN+3QhoAcw6stVA==",
   "success": true,
   "projectFilePath": "C:\\workspaces\\Microservices\\JiraService\\MicroService\\MicroService.Jira.Integrated.Api\\MicroService.Jira.Integrated.Api.csproj",
   "expectedPackageFiles": [

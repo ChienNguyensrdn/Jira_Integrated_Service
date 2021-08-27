@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-namespace MicroService.Jira.Integrated.Api.Models
+namespace Entities.Models
 {
     [Table("jiraissue")]
     public class Jiraissue
@@ -14,12 +11,15 @@ namespace MicroService.Jira.Integrated.Api.Models
         public decimal? Project { get; set; } 
         public string Reporter { get; set; }
         public string Assignee { get; set; }
+        [ForeignKey(nameof(IssueType))]
         public string issueType { get; set; }
         public string Summary { get; set; }
         public string  Description { get; set; }
         public string Environment { get; set; }
         public string Priority { get; set; }
         public string  Resolution { get; set; }
+
+        [ForeignKey(nameof(IssueStatus ))]
         public string issueStatus { get; set; }
         public DateTime? Created { get; set; }
         public DateTime? Updated { get; set; }

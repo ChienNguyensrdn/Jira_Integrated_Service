@@ -1,0 +1,15 @@
+C:\workspaces\Microservices\JiraService\MicroService\Contracts\bin\Debug\net5.0\Contracts.deps.json
+C:\workspaces\Microservices\JiraService\MicroService\Contracts\bin\Debug\net5.0\Contracts.dll
+C:\workspaces\Microservices\JiraService\MicroService\Contracts\bin\Debug\net5.0\ref\Contracts.dll
+C:\workspaces\Microservices\JiraService\MicroService\Contracts\bin\Debug\net5.0\Contracts.pdb
+C:\workspaces\Microservices\JiraService\MicroService\Contracts\bin\Debug\net5.0\Entities.dll
+C:\workspaces\Microservices\JiraService\MicroService\Contracts\bin\Debug\net5.0\Entities.pdb
+C:\workspaces\Microservices\JiraService\MicroService\Contracts\obj\Debug\net5.0\Contracts.csproj.AssemblyReference.cache
+C:\workspaces\Microservices\JiraService\MicroService\Contracts\obj\Debug\net5.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspaces\Microservices\JiraService\MicroService\Contracts\obj\Debug\net5.0\Contracts.AssemblyInfoInputs.cache
+C:\workspaces\Microservices\JiraService\MicroService\Contracts\obj\Debug\net5.0\Contracts.AssemblyInfo.cs
+C:\workspaces\Microservices\JiraService\MicroService\Contracts\obj\Debug\net5.0\Contracts.csproj.CoreCompileInputs.cache
+C:\workspaces\Microservices\JiraService\MicroService\Contracts\obj\Debug\net5.0\Contracts.csproj.CopyComplete
+C:\workspaces\Microservices\JiraService\MicroService\Contracts\obj\Debug\net5.0\Contracts.dll
+C:\workspaces\Microservices\JiraService\MicroService\Contracts\obj\Debug\net5.0\ref\Contracts.dll
+C:\workspaces\Microservices\JiraService\MicroService\Contracts\obj\Debug\net5.0\Contracts.pdb
