@@ -1,0 +1,17 @@
+C:\workspaces\Microservices\JiraService\MicroService\Repository\bin\Release\net5.0\Repository.deps.json
+C:\workspaces\Microservices\JiraService\MicroService\Repository\bin\Release\net5.0\Repository.dll
+C:\workspaces\Microservices\JiraService\MicroService\Repository\bin\Release\net5.0\ref\Repository.dll
+C:\workspaces\Microservices\JiraService\MicroService\Repository\bin\Release\net5.0\Repository.pdb
+C:\workspaces\Microservices\JiraService\MicroService\Repository\bin\Release\net5.0\Contracts.dll
+C:\workspaces\Microservices\JiraService\MicroService\Repository\bin\Release\net5.0\Entities.dll
+C:\workspaces\Microservices\JiraService\MicroService\Repository\bin\Release\net5.0\Contracts.pdb
+C:\workspaces\Microservices\JiraService\MicroService\Repository\bin\Release\net5.0\Entities.pdb
+C:\workspaces\Microservices\JiraService\MicroService\Repository\obj\Release\net5.0\Repository.csproj.AssemblyReference.cache
+C:\workspaces\Microservices\JiraService\MicroService\Repository\obj\Release\net5.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspaces\Microservices\JiraService\MicroService\Repository\obj\Release\net5.0\Repository.AssemblyInfoInputs.cache
+C:\workspaces\Microservices\JiraService\MicroService\Repository\obj\Release\net5.0\Repository.AssemblyInfo.cs
+C:\workspaces\Microservices\JiraService\MicroService\Repository\obj\Release\net5.0\Repository.csproj.CoreCompileInputs.cache
+C:\workspaces\Microservices\JiraService\MicroService\Repository\obj\Release\net5.0\Repository.csproj.CopyComplete
+C:\workspaces\Microservices\JiraService\MicroService\Repository\obj\Release\net5.0\Repository.dll
+C:\workspaces\Microservices\JiraService\MicroService\Repository\obj\Release\net5.0\ref\Repository.dll
+C:\workspaces\Microservices\JiraService\MicroService\Repository\obj\Release\net5.0\Repository.pdb
