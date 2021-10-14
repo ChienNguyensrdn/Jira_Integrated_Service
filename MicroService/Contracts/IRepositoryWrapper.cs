@@ -13,6 +13,7 @@ namespace Contracts
         IJiraActionRepository JiraAction { get; }
         IJiraIssueRepository JiraIssue { get; }
         IWorkLogRepository WorkLog { get; }
+        IOs_HistorystepRepository Os_Historystep { get; }
         void Save();
     }
 }

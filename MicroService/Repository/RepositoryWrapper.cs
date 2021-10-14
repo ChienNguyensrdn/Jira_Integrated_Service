@@ -11,6 +11,7 @@ namespace Repository
         private IJiraActionRepository _jiraAction;
         private IJiraIssueRepository _jiraIssue;
         private IWorkLogRepository _workLog;
+        private IOs_HistorystepRepository _os_Historystep;
         public IIssueStatusRepository IssueStatus
         {
             get
@@ -64,6 +65,17 @@ namespace Repository
                     _workLog = new WorkLogRepository (_repoContext);
                 }
                 return _workLog;
+            }
+        }
+        public IOs_HistorystepRepository Os_Historystep
+        {
+            get
+            {
+                if (_os_Historystep == null)
+                {
+                    _os_Historystep = new Os_HistorystepRepository(_repoContext);
+                }
+                return _os_Historystep;
             }
         }
         public RepositoryWrapper(RepositoryContext repositoryContext)

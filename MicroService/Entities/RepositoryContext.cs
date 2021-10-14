@@ -17,6 +17,7 @@ namespace Entities
         public DbSet<IssueType> IssueTypes { get; set; }
         public DbSet<JiraAction> JiraActions { get; set; }
         public DbSet<WorkLog> WorkLogs { get; set; }
+        public DbSet<Os_Historystep> Os_historysteps { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Jiraissue>().ToTable("jiraissue");
@@ -37,7 +38,6 @@ namespace Entities
             modelBuilder.Entity<Jiraissue>().Property(i => i.Dudate).HasColumnName("DUEDATE");
             modelBuilder.Entity<Jiraissue>().Property(i => i.resolutionDate).HasColumnName("RESOLUTIONDATE");
             modelBuilder.Entity<Jiraissue>().Property(i => i.Votes).HasColumnName("VOTES");
-
             modelBuilder.Entity<Jiraissue>().Property(i => i.Watches).HasColumnName("WATCHES");
             modelBuilder.Entity<Jiraissue>().Property(i => i.timeorigianEstimate).HasColumnName("TIMEORIGINALESTIMATE");
             modelBuilder.Entity<Jiraissue>().Property(i => i.timeEstimate).HasColumnName("TIMEESTIMATE");
@@ -46,6 +46,21 @@ namespace Entities
             modelBuilder.Entity<Jiraissue>().Property(i => i.Security).HasColumnName("SECURITY");
             modelBuilder.Entity<Jiraissue>().Property(i => i.Fixfor).HasColumnName("FIXFOR");
             modelBuilder.Entity<Jiraissue>().Property(i => i.Component).HasColumnName("COMPONENT");
+
+            modelBuilder.Entity<Os_Historystep>().ToTable("os_historystep");
+            modelBuilder.Entity<Os_Historystep>().Property(i => i.Id).HasColumnName("ID");
+            modelBuilder.Entity<Os_Historystep>().Property(i => i.EntryId).HasColumnName("ENTRY_ID");
+            modelBuilder.Entity<Os_Historystep>().Property(i => i.StepId).HasColumnName("STEP_ID");
+            modelBuilder.Entity<Os_Historystep>().Property(i => i.ActionId).HasColumnName("ACTION_ID");
+            modelBuilder.Entity<Os_Historystep>().Property(i => i.Owner).HasColumnName("OWNER");
+            modelBuilder.Entity<Os_Historystep>().Property(i => i.StartDate).HasColumnName("START_DATE");
+            modelBuilder.Entity<Os_Historystep>().Property(i => i.DueDate).HasColumnName("DUE_DATE");
+            modelBuilder.Entity<Os_Historystep>().Property(i => i.FinishDate).HasColumnName("FINISH_DATE");
+            modelBuilder.Entity<Os_Historystep>().Property(i => i.Status).HasColumnName("STATUS");
+            modelBuilder.Entity<Os_Historystep>().Property(i => i.Caller).HasColumnName("CALLER");
+            //modelBuilder.Entity<Jiraissue>()
+           //.HasOne(p => p.Os_historysteps)
+           //.WithMany(b => b.jira);
         }
     }
 }

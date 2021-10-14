@@ -21,10 +21,10 @@ namespace MicroService.Jira.Integrated.Api.Controllers
         }
         [Route("project/{projectId}/pKey/{pKey}/page/{page}/pageSize/{pageSize}")]
         [HttpGet]
-        public async Task<List <Jiraissue>> Get(decimal projectId,string pKey="",int page=1, int pageSize=10)
+        public async Task<List <Jiraissue>> Get(decimal projectId,string pKey="FULL",int page=1, int pageSize=10)
         {
-            var jiraissues = _repoWrapper.JiraIssue.FindByCondition(x => x.Project==projectId &&(x.pkey==pKey || pKey==""))
-                .OrderBy(x=>x.Created).Skip(page * pageSize).Take(pageSize);
+            var jiraissues = _repoWrapper.JiraIssue.FindByCondition(x => x.Project==projectId &&(x.pkey==pKey || pKey=="FULL"))
+                .OrderByDescending(x=>x.Created ).Skip(page * pageSize).Take(pageSize);
             return await Task.FromResult(jiraissues.ToList()); 
         }
         [HttpPut("{Id}")]

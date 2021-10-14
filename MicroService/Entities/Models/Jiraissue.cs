@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace Entities.Models
@@ -29,10 +30,14 @@ namespace Entities.Models
         public decimal?Watches { get; set; }
         public decimal? timeorigianEstimate { get; set; }
         public decimal? timeEstimate { get; set; }
-        public decimal? timeSpent { get; set; } 
-        public decimal? WorkFlow_Id { get; set; } 
+        public decimal? timeSpent { get; set; }
+        public decimal? WorkFlow_Id { get; set; }
+        //one-to-many relationship between Jiraissue and os_historystep
+        //public List<Os_historystep> Os_historysteps { get; set; }
         public decimal? Security { get; set; } 
         public decimal? Fixfor { get; set; }
         public decimal? Component { get; set; }
+
+      
     }
 }

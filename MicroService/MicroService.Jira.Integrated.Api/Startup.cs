@@ -38,13 +38,18 @@ namespace MicroService.Jira.Integrated.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MicroService.Jira.Integrated.Api", Version = "v1" });
             });
+            services.AddCors(c =>
+            {
+                c.AddPolicy("Allow-Origin", options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            });
             
         }
       
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
+            app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            if (env.IsDevelopment() || env.IsProduction())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
